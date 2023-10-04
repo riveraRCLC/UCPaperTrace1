@@ -69,8 +69,17 @@ session_start();
                     <span class="fas fa-lock"></span>
                 </div>
             </div>
-        </div>
-        <div class="row">
+          </div>
+          <div class="input-group mb-3">
+            <input type="password" name="passwordConfirm" class="form-control" placeholder="ConfirmPassword">
+            <div class="input-group-append">
+                <div class="input-group-text">
+                    <span class="fas fa-lock"></span>
+                </div>
+            </div>
+          </div>
+
+          <div class="row">
             <div class="col-8">
                 <div class="icheck-primary">
                     <input type="checkbox" id="agreeTerms" name="terms" value="agree">

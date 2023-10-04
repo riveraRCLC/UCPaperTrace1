@@ -9,7 +9,9 @@ if(isset($_POST['save_student']))
     $middleName = mysqli_real_escape_string($con,$_POST['middleName']);
     $lastName = mysqli_real_escape_string($con,$_POST['lastName']);
     $password = mysqli_real_escape_string($con,$_POST['password']);
-          
+    
+    
+
     $query = "INSERT INTO user (uemail, ufname, umname, ulname, upassword) VALUES ('$email','$firstName','$middleName','$lastName' ,'$password')";
 
     $query_run = mysqli_query($con, $query);
