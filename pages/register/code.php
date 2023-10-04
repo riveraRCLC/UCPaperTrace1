@@ -2,13 +2,13 @@
         
         require("config.php");
 
-        if(isset($_POST['submit']))
+        if(isset($_POST['save_student']))
         {
-          $userfname = mysqli_real_escape_string($conn,$_POST['userfname']);
-          $userlname = mysqli_real_escape_string($conn,$_POST['userlname']);
-          $useremail = mysqli_real_escape_string($conn,$_POST['useremail']);
-          $password = mysqli_real_escape_string($conn,$_POST['password']);
-          $confirmpassword = mysqli_real_escape_string($conn,$_POST['confirmpassword']);
+          $name = mysqli_real_escape_string($con,$_POST['userfname']);
+          $userlname = mysqli_real_escape_string($con,$_POST['userlname']);
+          $useremail = mysqli_real_escape_string($con,$_POST['useremail']);
+          $password = mysqli_real_escape_string($con,$_POST['password']);
+          $confirmpassword = mysqli_real_escape_string($con,$_POST['confirmpassword']);
 
         }
         
