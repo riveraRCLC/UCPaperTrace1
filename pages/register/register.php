@@ -39,7 +39,7 @@ session_start();
           </div>
         </div>
         <div class="input-group mb-3">
-          <input type="email" name = "lastName" class="form-control" placeholder="Last Name">
+          <input type="text" name = "lastName" class="form-control" placeholder="Last Name">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-envelope"></span>
@@ -47,7 +47,7 @@ session_start();
           </div>
         </div>
         <div class="input-group mb-3">
-          <input type="text" name = "email" class="form-control" placeholder="Email">
+          <input type="email" name = "email" class="form-control" placeholder="Email">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-lock"></span>

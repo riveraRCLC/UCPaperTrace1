@@ -9,7 +9,7 @@ session_start();
           $email = mysqli_real_escape_string($con,$_POST['email']);
           $password = mysqli_real_escape_string($con,$_POST['password']);
           
-          $query = "INSERT INTO test1 (firstName,lastName,email,password) VALUES ('$firstName','$lastName','$email','$password')";
+          $query = "INSERT INTO user (firstName,lastName,email,password) VALUES ('$firstName','$lastName','$email','$password')";
 
           $query_run = mysqli_query($con, $query);
           if($query_run){
