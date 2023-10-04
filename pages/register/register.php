@@ -62,24 +62,25 @@ session_start();
                 </div>
             </div>
         </div>
+        
         <div class="input-group mb-3">
-            <input type="password" name="password" class="form-control" placeholder="Password">
+            <input type="password" name="password" id="password" class="form-control" placeholder="Password">
             <div class="input-group-append">
                 <div class="input-group-text">
                     <span class="fas fa-lock"></span>
                 </div>
             </div>
-          </div>
-          <div class="input-group mb-3">
-            <input type="password" name="passwordConfirm" class="form-control" placeholder="ConfirmPassword">
+        </div>
+        <div class="input-group mb-3">
+            <input type="password" name="passwordConfirm" id="passwordConfirm" class="form-control" placeholder="Confirm Password">
             <div class="input-group-append">
                 <div class="input-group-text">
                     <span class="fas fa-lock"></span>
                 </div>
             </div>
-          </div>
+        </div>
 
-          <div class="row">
+        <div class="row">
             <div class="col-8">
                 <div class="icheck-primary">
                     <input type="checkbox" id="agreeTerms" name="terms" value="agree">
@@ -90,10 +91,26 @@ session_start();
             </div>
             <!-- /.col -->
             <div class="col-4">
-                <button type="submit" name="save_student" class="btn btn-primary btn-block">Register</button>
+                <button type="submit" name="save_student" class="btn btn-primary btn-block" onclick="return validatePassword()">Register</button>
             </div>
             <!-- /.col -->
         </div>
+    </form>
+
+    <script>
+        function validatePassword() {
+            var password = document.getElementById('password').value;
+            var passwordConfirm = document.getElementById('passwordConfirm').value;
+
+            if (password !== passwordConfirm) {
+                alert("Passwords do not match. Please confirm your password.");
+                return false; // Prevent form submission
+            }
+
+            // If passwords match, the form will be submitted as usual
+            return true;
+        }
+    </script>
     </form>
 
 
