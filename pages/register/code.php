@@ -14,11 +14,11 @@ if(isset($_POST['save_student']))
     $query_run = mysqli_query($con, $query);
     if($query_run){
         $_SESSION['message'] = "Student Created Successfully";
-        header("Location: index.php");
+        header("Location: register.php");
         exit(0);
     }else{
         $_SESSION['message'] = "Student NOT CREATED";
-        header("Location: index.php");
+        header("Location: register.php");
          exit(0);
     }
 

@@ -29,7 +29,7 @@ session_start();
 
      
 
-      <form action="pages/register/code.php" method="POST">
+      <form action="code.php" method="POST">
         <div class="input-group mb-3">
           <input type="text" name = "firstName" class="form-control" placeholder="First Name">
           <div class="input-group-append">
