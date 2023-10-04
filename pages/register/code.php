@@ -1,6 +1,6 @@
 <?php
 session_start();        
-        require("config.php");
+        require 'config.php';
 
         if(isset($_POST['save_student']))
         {
@@ -14,11 +14,11 @@ session_start();
           $query_run = mysqli_query($con, $query);
           if($query_run){
             $_SESSION['message'] = "Student Created Successfully";
-            header("Location: register.php");
+            header("Location: pages/register/register.php");
             exit(0);
           }else{
             $_SESSION['message'] = "Student NOT CREATED";
-            header("Location: register.php");
+            header("Location: pages/register/register.php");
             exit(0);
           }
 
